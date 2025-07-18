@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FanControlConfigV2 xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <NotebookModel>HP OMEN 15-5210nr</NotebookModel>
+  <Author>ngkoi</Author>
+  <EcPollInterval>1500</EcPollInterval>
+  <ReadWriteWords>false</ReadWriteWords>
+  <CriticalTemperature>90</CriticalTemperature>
+  <FanConfigurations>
+    <FanConfiguration>
+      <ReadRegister>149</ReadRegister>
+      <WriteRegister>148</WriteRegister>
+      <MinSpeedValue>255</MinSpeedValue>
+      <MaxSpeedValue>88</MaxSpeedValue>
+      <IndependentReadMinMaxValues>false</IndependentReadMinMaxValues>
+      <MinSpeedValueRead>0</MinSpeedValueRead>
+      <MaxSpeedValueRead>0</MaxSpeedValueRead>
+      <ResetRequired>true</ResetRequired>
+      <FanSpeedResetValue>255</FanSpeedResetValue>
+      <FanDisplayName>CPU Fan</FanDisplayName>
+      <TemperatureThresholds>
+        <TemperatureThreshold>
+          <UpThreshold>50</UpThreshold>
+          <DownThreshold>45</DownThreshold>
+          <FanSpeed>30</FanSpeed>
+        </TemperatureThreshold>
+        <TemperatureThreshold>
+          <UpThreshold>65</UpThreshold>
+          <DownThreshold>55</DownThreshold>
+          <FanSpeed>50</FanSpeed>
+        </TemperatureThreshold>
+        <TemperatureThreshold>
+          <UpThreshold>75</UpThreshold>
+          <DownThreshold>68</DownThreshold>
+          <FanSpeed>80</FanSpeed>
+        </TemperatureThreshold>
+        <TemperatureThreshold>
+          <UpThreshold>85</UpThreshold>
+          <DownThreshold>78</DownThreshold>
+          <FanSpeed>80</FanSpeed>
+        </TemperatureThreshold>
+      </TemperatureThresholds>
+      <FanSpeedPercentageOverrides />
+    </FanConfiguration>
+    <FanConfiguration>
+      <ReadRegister>152</ReadRegister>
+      <WriteRegister>151</WriteRegister>
+      <MinSpeedValue>255</MinSpeedValue>
+      <MaxSpeedValue>88</MaxSpeedValue>
+      <IndependentReadMinMaxValues>true</IndependentReadMinMaxValues>
+      <MinSpeedValueRead>255</MinSpeedValueRead>
+      <MaxSpeedValueRead>88</MaxSpeedValueRead>
+      <ResetRequired>true</ResetRequired>
+      <FanSpeedResetValue>255</FanSpeedResetValue>
+      <FanDisplayName>GPU Fan</FanDisplayName>
+      <TemperatureThresholds />
+      <FanSpeedPercentageOverrides>
+        <FanSpeedPercentageOverride><Percentage>0</Percentage><FanSpeedValue>255</FanSpeedValue></FanSpeedPercentageOverride>
+        <FanSpeedPercentageOverride><Percentage>1</Percentage><FanSpeedValue>158</FanSpeedValue></FanSpeedPercentageOverride>
+        <FanSpeedPercentageOverride><Percentage>30</Percentage><FanSpeedValue>158</FanSpeedValue></FanSpeedPercentageOverride>
+        <FanSpeedPercentageOverride><Percentage>50</Percentage><FanSpeedValue>140</FanSpeedValue></FanSpeedPercentageOverride>
+        <FanSpeedPercentageOverride><Percentage>70</Percentage><FanSpeedValue>102</FanSpeedValue></FanSpeedPercentageOverride>
+        <FanSpeedPercentageOverride><Percentage>80</Percentage><FanSpeedValue>88</FanSpeedValue></FanSpeedPercentageOverride>
+      </FanSpeedPercentageOverrides>
+    </FanConfiguration>
+  </FanConfigurations>
+  <RegisterWriteConfigurations>
+    <RegisterWriteConfiguration>
+      <WriteMode>Set</WriteMode>
+      <WriteOccasion>OnInitialization</WriteOccasion>
+      <Register>147</Register>
+      <Value>20</Value>
+      <ResetRequired>true</ResetRequired>
+      <ResetValue>4</ResetValue>
+      <ResetWriteMode>Set</ResetWriteMode>
+      <Description>Master Fan Control Enable</Description>
+    </RegisterWriteConfiguration>
+  </RegisterWriteConfigurations>
+</FanControlConfigV2>
